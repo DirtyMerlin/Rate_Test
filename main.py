@@ -37,7 +37,21 @@ def chicks():
     
     print "Your chick of choice is a", final, "."
    
-
-    exit
+def finished():
+   print "Would you like to continue?"
+   a= raw_input("Y/N:")
+   if a.lowercase == y:
+    gui()
+   else:
+    terminate()
+ def terminate():
+  i=3
+  while i >1:
+    print "Terminating in %s seconds" %(i)
+    time.sleep(1)
+  if i == 1:
+    print "Terminating in 1 second"
+    time.sleep(1)   
+  exit 
 gui()
     
